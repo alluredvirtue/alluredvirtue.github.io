@@ -1,1 +1,36 @@
-const button=document.querySelector('.menu');const nav=document.querySelector('.site-nav');if(button&&nav){button.addEventListener('click',()=>{const open=nav.classList.toggle('open');button.setAttribute('aria-expanded',String(open))});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');button.setAttribute('aria-expanded','false')}))}const items=document.querySelectorAll('.reveal');if('IntersectionObserver'in window){const o=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');o.unobserve(e.target)}}),{threshold:.12});items.forEach(i=>o.observe(i))}else items.forEach(i=>i.classList.add('visible'));const search=document.querySelector('#library-search');const cards=[...document.querySelectorAll('.library-card')];const empty=document.querySelector('.empty');if(search&&cards.length){search.addEventListener('input',()=>{const q=search.value.trim().toLowerCase();let n=0;cards.forEach(c=>{const show=c.textContent.toLowerCase().includes(q);c.hidden=!show;if(show)n++});if(empty)empty.style.display=n?'none':'block'})}
+const menuButton = document.querySelector(".menu-button");
+const navigation = document.querySelector(".site-nav");
+
+if (menuButton && navigation) {
+  menuButton.addEventListener("click", () => {
+    const open = navigation.classList.toggle("open");
+    menuButton.setAttribute("aria-expanded", String(open));
+  });
+
+  navigation.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      navigation.classList.remove("open");
+      menuButton.setAttribute("aria-expanded", "false");
+    });
+  });
+}
+
+const revealItems = document.querySelectorAll(".reveal");
+
+if ("IntersectionObserver" in window) {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.12 }
+  );
+
+  revealItems.forEach((item) => observer.observe(item));
+} else {
+  revealItems.forEach((item) => item.classList.add("visible"));
+}

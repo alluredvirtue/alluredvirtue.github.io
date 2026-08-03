@@ -1,12 +1,23 @@
 # ALLURED VIRTUE website
 
-A responsive four-page GitHub Pages site for alluredvirtue.com.
+This package includes the real ALLURED VIRTUE logo, the front and back covers of SELF, the publishing philosophy, and the founder statement.
 
-Files:
-- index.html — home
-- library.html — PDF library placeholders and search
-- about.html — purpose and author
-- contact.html — contact placeholder
-- style.css — shared visual design
-- app.js — mobile menu, reveal effects, and library search
-- CNAME — custom domain
+## Upload
+
+1. Unzip the folder.
+2. Open the alluredvirtue.github.io repository.
+3. Choose Add file, then Upload files.
+4. Upload every file and the images folder.
+5. Commit directly to the main branch.
+6. Refresh alluredvirtue.com after GitHub finishes deploying.
+
+## Adding the PDF later
+
+Create a folder named books and upload the finished PDF as:
+
+books/SELF-A-Living-Manuscript.pdf
+
+Then replace the disabled buttons in library.html with:
+
+<a class="button filled" href="books/SELF-A-Living-Manuscript.pdf" target="_blank" rel="noopener">Read</a>
+<a class="button" href="books/SELF-A-Living-Manuscript.pdf" download>Download</a>
