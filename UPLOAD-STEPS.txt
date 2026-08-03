@@ -1,0 +1,27 @@
+ALLURED VIRTUE — UPLOAD STEPS
+
+1. Download and unzip ALLURED_VIRTUE_Website.zip.
+2. Open GitHub and go to alluredvirtue / alluredvirtue.github.io.
+3. Click Add file → Upload files.
+4. Drag every file from inside the unzipped folder into GitHub.
+   Do not upload only the ZIP file.
+5. GitHub will show that index.html is being replaced and new files are being added.
+6. Commit message: Redesign ALLURED VIRTUE website
+7. Select Commit directly to the main branch.
+8. Click Commit changes.
+9. Wait a few minutes, open https://alluredvirtue.com, then press Command + Shift + R.
+
+IMPORTANT
+- Keep CNAME. It preserves alluredvirtue.com.
+- PDFs are not included yet.
+- The library already contains designed placeholders for SELF and Remove the Mask.
+- Contact stays marked coming soon until an email or form is connected.
+
+ADDING A PDF LATER
+1. Create a folder in GitHub named books.
+2. Upload the PDF, such as books/SELF-A-Living-Manuscript.pdf.
+3. Edit library.html.
+4. Replace the two disabled button spans for that book with:
+
+<a class="button filled" href="books/SELF-A-Living-Manuscript.pdf" target="_blank" rel="noopener">Read</a>
+<a class="button" href="books/SELF-A-Living-Manuscript.pdf" download>Download</a>
