@@ -21,3 +21,8 @@ Then replace the disabled buttons in library.html with:
 
 <a class="button filled" href="books/SELF-A-Living-Manuscript.pdf" target="_blank" rel="noopener">Read</a>
 <a class="button" href="books/SELF-A-Living-Manuscript.pdf" download>Download</a>
+
+
+## Remove the Mask
+
+The PDF is already included at `books/Remove-The-Mask.pdf`. The Library page contains active Read and Download buttons.
