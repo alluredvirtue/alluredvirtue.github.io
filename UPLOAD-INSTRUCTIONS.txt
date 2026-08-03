@@ -1,0 +1,11 @@
+Upload these files to the root of your GitHub repository and replace the old ones:
+- favicon.ico
+- favicon-16x16.png
+- favicon-32x32.png
+- favicon-48x48.png
+- apple-touch-icon.png
+- android-chrome-192x192.png
+- favicon-512x512.png
+
+If your site code already has favicon links, you do not need to change anything else.
+After uploading, commit the changes, then hard refresh the website or reopen the tab.
