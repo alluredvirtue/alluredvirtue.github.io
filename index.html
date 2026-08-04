@@ -3,13 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Donesha Park | Author and Founder of ALLURED VIRTUE</title>
-  <meta name="description" content="The official home of Donesha Park, author and founder of ALLURED VIRTUE, a free digital library.">
+  <title>ALLURED VIRTUE | Knowledge Belongs to Everyone</title>
+  <meta name="description" content="The official home of ALLURED VIRTUE and SELF: A Living Manuscript by Donesha Park.">
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/allured-virtue-tab-icon-v2-32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/allured-virtue-tab-icon-v2-48.png">
+  <link rel="apple-touch-icon" href="/allured-virtue-touch-icon-v2.png">
 </head>
 <body>
 
@@ -24,30 +23,59 @@
     <button class="menu-button" type="button" aria-expanded="false" aria-label="Open navigation">☰</button>
 
     <nav class="site-nav" aria-label="Main navigation">
-      <a href="index.html">Home</a>
-      <a href="library.html">Library</a>
-      <a href="self.html">SELF</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
+      <a class="transition-link" href="index.html">Home</a>
+      <a class="transition-link" href="library.html">Library</a>
+      <a class="transition-link" href="self.html">SELF</a>
+      <a class="transition-link" href="about.html">About</a>
+      <a class="transition-link" href="contact.html">Contact</a>
     </nav>
   </div>
 </header>
 
 <main id="main-content">
-  <section class="hero">
-    <div class="shell hero-grid hero-grid-single">
-      <div class="reveal">
-        <p class="eyebrow">Donesha Park · Author and Founder</p>
+  <section class="hero cinematic-hero" data-parallax-root>
+    <div class="cinematic-image" data-parallax-speed="0.12" aria-hidden="true"></div>
+    <div class="moving-clouds clouds-one" data-parallax-speed="0.05" aria-hidden="true"></div>
+    <div class="moving-clouds clouds-two" data-parallax-speed="0.08" aria-hidden="true"></div>
+    <div class="star-field" aria-hidden="true"></div>
+    <div class="light-rays" aria-hidden="true"></div>
+    <div class="leaf-field" aria-hidden="true"></div>
+    <div class="water-ripples" aria-hidden="true"></div>
+    <div class="hero-shade" aria-hidden="true"></div>
+
+    <div class="shell cinematic-content">
+      <div class="reveal hero-copy">
+        <p class="eyebrow">The home of living manuscripts</p>
         <h1 class="display">Knowledge belongs<br><span class="gold">to everyone.</span></h1>
         <p class="lede">
           Every book published through ALLURED VIRTUE is available free in digital format because wisdom should never be limited by someone's ability to pay.
         </p>
         <div class="button-row">
-          <a class="button filled" href="library.html">Enter the library</a>
-          <a class="button" href="self.html">Explore SELF</a>
-          <a class="button" href="about.html">Read the philosophy</a>
+          <a class="button filled transition-link" href="library.html">Enter the library</a>
+          <a class="button transition-link" href="self.html">Explore SELF</a>
+          <a class="button transition-link" href="about.html">Read the philosophy</a>
         </div>
       </div>
+
+      <div class="hero-lotus-wrap reveal" data-parallax-speed="-0.04">
+        <img class="hero-lotus" src="images/allured-virtue-logo-transparent.png" alt="ALLURED VIRTUE lotus logo">
+      </div>
+    </div>
+
+    <a class="scroll-cue" href="#home-statement" aria-label="Scroll to continue">
+      <span></span>
+      Scroll
+    </a>
+  </section>
+
+  <section class="home-statement section" id="home-statement">
+    <div class="shell statement-center reveal">
+      <div class="animated-gold-line" aria-hidden="true"></div>
+      <p class="eyebrow">ALLURED VIRTUE</p>
+      <h2>Read slowly. Observe deeply. Remember yourself.</h2>
+      <p>Enter a growing library of living manuscripts by Donesha Park.</p>
+      <a class="button transition-link" href="library.html">Open the library</a>
+      <div class="animated-gold-line reverse" aria-hidden="true"></div>
     </div>
   </section>
 </main>
