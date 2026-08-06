@@ -1,0 +1,16 @@
+UPLOAD ONLY THESE TWO FILES
+
+1. Open the main Code page of alluredvirtue/alluredvirtue.github.io.
+2. Click Add file, then Upload files.
+3. Open this unzipped folder.
+4. Select library.html and style.css.
+5. Drag both files into GitHub.
+6. GitHub should show that both files already exist and will be replaced.
+7. Commit directly to main.
+8. Wait up to 10 minutes.
+9. Open https://alluredvirtue.com/library.html
+10. Refresh with Option + Command + R.
+
+Do not upload the ZIP itself.
+Do not upload the outer folder.
+THE ROOT receives no invented-events statement.

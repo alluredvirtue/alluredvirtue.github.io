@@ -1126,35 +1126,48 @@ body.page-leaving {
 }
 
 
-/* Library philosophy and short manuscripts */
+/* Visible Library structure update */
+.library-section-label {
+  margin: 72px 0 34px;
+}
+
+.library-section-label h2 {
+  margin: 0;
+  color: var(--gold-bright);
+  font-size: clamp(2.5rem, 6vw, 4.8rem);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
 .library-core {
   max-width: 980px;
-  margin: 120px auto 0;
+  margin: 125px auto 0;
   padding: clamp(44px, 7vw, 82px);
   border: 1px solid var(--line);
   border-radius: 28px;
   text-align: center;
   background:
-    radial-gradient(circle at 50% 20%, rgba(217, 179, 107, 0.12), transparent 44%),
-    rgba(255, 255, 255, 0.022);
-  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.28);
+    radial-gradient(circle at 50% 18%, rgba(217, 179, 107, 0.14), transparent 46%),
+    rgba(255, 255, 255, 0.025);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.30);
 }
 
 .library-core h2 {
   margin: 0;
   color: var(--gold-bright);
-  font-size: clamp(2.8rem, 7vw, 5.7rem);
+  font-size: clamp(3rem, 8vw, 6rem);
   font-weight: 400;
   line-height: 1;
-  letter-spacing: -0.045em;
+  letter-spacing: -0.05em;
 }
 
 .library-core > p:not(.eyebrow) {
-  max-width: 850px;
-  margin: 28px auto 0;
+  max-width: 860px;
+  margin: 30px auto 0;
   color: var(--muted);
-  font-size: clamp(1.04rem, 2vw, 1.22rem);
-  line-height: 1.9;
+  font-size: clamp(1.05rem, 2vw, 1.24rem);
+  line-height: 1.92;
 }
 
 .library-core .animated-gold-line.reverse {
@@ -1163,7 +1176,6 @@ body.page-leaving {
 
 .short-manuscripts {
   margin-top: 120px;
-  padding-top: 10px;
 }
 
 .short-manuscripts-heading {
@@ -1171,7 +1183,7 @@ body.page-leaving {
 }
 
 .short-manuscripts-note {
-  max-width: 850px !important;
+  max-width: 860px !important;
   color: var(--paper) !important;
   font-size: clamp(1.15rem, 2.4vw, 1.55rem) !important;
   font-style: italic;
@@ -1179,25 +1191,23 @@ body.page-leaving {
 }
 
 .short-manuscripts-about {
-  max-width: 930px;
-  margin-bottom: 48px;
+  max-width: 940px;
   padding: clamp(30px, 5vw, 54px);
   border-left: 1px solid var(--gold);
-  background:
-    linear-gradient(90deg, rgba(217, 179, 107, 0.08), transparent 75%);
+  background: linear-gradient(90deg, rgba(217, 179, 107, 0.09), transparent 78%);
 }
 
 .short-manuscripts-about h3 {
   margin: 0 0 24px;
   color: var(--gold-bright);
-  font-size: clamp(1.7rem, 4vw, 2.7rem);
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
   font-weight: 400;
 }
 
 .short-manuscripts-about p {
   margin: 0 0 22px;
   color: var(--muted);
-  font-size: 1.05rem;
+  font-size: 1.06rem;
   line-height: 1.9;
 }
 
@@ -1209,6 +1219,7 @@ body.page-leaving {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 26px;
+  margin-top: 46px;
 }
 
 .short-manuscript-note {
